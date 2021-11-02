@@ -98,6 +98,7 @@ module.exports = function (app, passport, db) {
           user: req.user,
           produce: result,
           inRightNow: inSeasonProduce,
+          allProduce: produce
         });
       });
   });

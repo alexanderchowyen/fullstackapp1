@@ -58,9 +58,20 @@
             <li class="produceItem">
               <span class="produceName"><%= produce[i].name %></span>
               <span class="produceSeason"><%= produce[i].season %></span>
-              <span><%= produce[i].like %></span>
-              <span><i class="fas fa-heart" aria-hidden="true"></i></span>
+              <!-- <span><i class="fas fa-heart" aria-hidden="true"></i></span> -->
               <button class="deleteSaved">delete</button>
+            </li>
+          <% } %>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <h3>All Produce</h3>
+          <ul class="savedProduce">
+          <% for(var i=0; i<allProduce.length; i++) {%>
+            <li class="produceItem">
+              <span class="produceName"><%= allProduce[i].name %></span>
+              <span class="produceSeason"><%= allProduce[i].season %></span>
+              <span class='save'>save</span>
             </li>
           <% } %>
           </ul>
