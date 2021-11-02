@@ -1,3 +1,6 @@
+An app made to see in season fruits and veggies (produce) allows users to log in and save and "heart" produce
+
+
 ## Installation
 
 1. Clone repo
