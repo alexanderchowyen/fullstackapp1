@@ -1,7 +1,25 @@
-body{
-  padding-top:80px;
-  word-wrap:break-word;
+body {
+  padding-top: 80px;
+  word-wrap: break-word;
 }
-img{
+img {
   height: 200px;
+}
+
+.container,
+.jumbotron {
+  background-color: #4b6b3c;
+}
+
+.profile {
+  font-family: "Source Code Pro", monospace;
+  background-image: url(../img/fruits.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  text-align: center;
+}
+
+li {
+  list-style: none;
 }

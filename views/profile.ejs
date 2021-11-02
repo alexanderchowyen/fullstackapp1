@@ -1,23 +1,27 @@
 <!doctype html>
 <html>
 <head>
-    <title>21 Savage Fan Site</title>
+    <title>Produce Tracker</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cb8fc1ada5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="profile">
 <div class="container">
 
     <div class="page-header text-center">
-        <h1><span class="fa fa-anchor"></span> Profile Page</h1>
+        <h1><span class="fas fa-seedling"></span> Profile Page</h1>
         <a href="/logout" class="btn btn-default btn-sm">Logout</a>
     </div>
 
     <div class="row">
 
         <!-- LOCAL INFORMATION -->
-        <div class="col-sm-6">
+        <!-- <div class="col-sm-6">
             <div class="well">
                 <h3><span class="fa fa-user"></span> Local</h3>
 
@@ -33,7 +37,7 @@
                     <a href="/connect/local" class="btn btn-default">Connect Local</a>
                 <% } %>
 
-            </div>
+            </div> -->
         </div>
         <div class="col-sm-6">
           <h3>In Season Fruits & Veg</h3>
@@ -45,18 +49,21 @@
               <span class='save'>save</span>
             </li>
           <% } %>
-          </ul> 
+          </ul>
         </div>
         <div class="col-sm-6">
           <h3>Saved Fruits & Veg</h3>
-          <ul class="messages">
+          <ul class="savedProduce">
           <% for(var i=0; i<produce.length; i++) {%>
-            <li class="message">
-              <span><%= produce[i].name %></span>
-              <span><%= produce[i].season %></span>
+            <li class="produceItem">
+              <span class="produceName"><%= produce[i].name %></span>
+              <span class="produceSeason"><%= produce[i].season %></span>
+              <span><%= produce[i].like %></span>
+              <span><i class="fas fa-heart" aria-hidden="true"></i></span>
+              <button class="deleteSaved">delete</button>
             </li>
           <% } %>
-          </ul> 
+          </ul>
         </div>
 
 <script src="main.js"></script>

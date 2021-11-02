@@ -52,3 +52,5 @@ app.use(flash()); // use connect-flash for flash messages stored in session
 // launch ======================================================================
 app.listen(port);
 console.log('The magic happens on port ' + port);
+
+//this was worked on by week 11 leon sprint team
